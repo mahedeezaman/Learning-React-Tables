@@ -1,0 +1,75 @@
+:root {
+  --primary: #dddddd;
+  --dark: #333333;
+  --light: #ffffff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: #cccccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.tabBar {
+  position: sticky;
+  top: 0px;
+  background-color: #cccccc;
+  padding: 30px 50px;
+}
+
+.tabBar ul {
+  display: grid;
+  grid-gap: 1.1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabBar a {
+  background: var(--primary);
+  color: var(--dark);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.tabBar a:hover {
+  background: var(--dark);
+  color: var(--primary);
+  scale: 1.08;
+}
+
+.tabBar .selected {
+  background: var(--dark);
+  color: var(--light);
+}
+
+.dataList li {
+  padding: 1rem;
+}
+
+.TableList {
+  width: 100%;
+  overflow-y: auto;
+}
+
+td {
+  border: 1px solid var(--dark);
+  padding: 1rem;
+}
